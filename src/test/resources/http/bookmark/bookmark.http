@@ -1,0 +1,14 @@
+### 북마크 조회
+GET http://localhost:8080/api/bookmarks?page=1&size=10&sort=id,desc
+
+### 북마크 검색
+GET http://localhost:8080/api/bookmarks?page=1&size=10&sort=id,desc&query=java
+
+### 북마크 생성
+POST http://localhost:8080/api/bookmarks
+Content-Type: application/json
+
+{
+  "title":"springboot",
+  "url":"http://spring.io"
+}
